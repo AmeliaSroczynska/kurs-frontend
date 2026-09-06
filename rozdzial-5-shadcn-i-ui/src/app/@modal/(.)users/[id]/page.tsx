@@ -6,7 +6,7 @@ import {useParams, useRouter} from "next/navigation";
 import {
   Dialog,
   DialogContent, DialogHeader, DialogTitle,
-} from "@/src/components/ui/dialog"
+} from "@/components/ui/dialog"
 import { UserProfileDetails } from "@/src/components/UserProfileDetails";
 
 export default function UserModal() {

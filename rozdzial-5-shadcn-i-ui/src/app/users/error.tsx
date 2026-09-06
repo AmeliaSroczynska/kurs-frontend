@@ -1,7 +1,7 @@
 'use client';
 
-import { Button } from "@/src/components/ui/button";
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyTitle, EmptyMedia } from "@/src/components/ui/empty";
+import { Button } from "@/components/ui/button";
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyTitle, EmptyMedia } from "@/components/ui/empty";
 import { UserRoundXIcon } from 'lucide-react';
 
 export default function Error({

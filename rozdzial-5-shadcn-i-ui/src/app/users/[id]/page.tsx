@@ -2,7 +2,7 @@ import { MOCK_USERS } from "@/src/components/UserProfilesList";
 import { User } from "@/src/types/User";
 import { notFound } from "next/navigation";
 import { UserProfileDetails } from "@/src/components/UserProfileDetails";
-import { buttonVariants } from "@/src/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 

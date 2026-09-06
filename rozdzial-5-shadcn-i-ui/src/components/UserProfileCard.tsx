@@ -5,10 +5,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/src/components/ui/card"
+} from "@/components/ui/card"
 import { User } from "../types/User";
-import { buttonVariants} from "@/src/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/src/components/ui/avatar";
+import { buttonVariants} from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import PizzaIcon from "@/src/components/PizzaIcon";
 
@@ -23,7 +23,7 @@ export function UserProfileCard({ user }: UserProfileCardProps) {
 
   return (
     // Nadanie elementowi klasy @container w celu obserwacji zmiany jego rozmiaru
-    <Card className="@container relative mx-auto max-w-none w-full pt-4">
+    <Card className="@container group relative mx-auto max-w-none w-full pt-4">
       <Avatar className="size-24 mx-auto @md:ml-(--card-spacing)">
         <AvatarImage src={avatarUrl} />
         <AvatarFallback className="uppercase">{fallbackAvatar}</AvatarFallback>
@@ -48,7 +48,12 @@ export function UserProfileCard({ user }: UserProfileCardProps) {
         <Link
           className={buttonVariants({
             size: 'lg',
-            className: 'w-full @md:w-fit'
+            className: `
+              w-full @md:w-fit
+              opacity-0 scale-60
+              group-hover:opacity-100 group-hover:scale-100
+              transition-all duration-400
+              `
           })}
           href={profileUrl}
         >
