@@ -1,5 +1,5 @@
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyTitle } from "@/src/components/ui/empty";
-import { buttonVariants } from "@/src/components/ui/button";
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function NotFound() {
